@@ -1,20 +1,20 @@
 // @flow strict-local
-import EventEmitter from 'events';
 
 import type {AssetRequest, ParcelOptions, Target} from '@parcel/types';
-import {PromiseQueue} from '@parcel/utils';
 import type {Event} from '@parcel/watcher';
-
-import type Asset from './Asset';
-import AssetGraph from './AssetGraph';
-import type Config from './Config';
-import RequestGraph from './RequestGraph';
 import type {
   AssetGraphNode,
   AssetRequestNode,
   CacheEntry,
   DepPathRequestNode
 } from './types';
+
+import EventEmitter from 'events';
+import type Asset from './Asset';
+import {PromiseQueue} from '@parcel/utils';
+import AssetGraph from './AssetGraph';
+import type Config from './Config';
+import RequestGraph from './RequestGraph';
 
 import dumpToGraphViz from './dumpGraphToGraphViz';
 
